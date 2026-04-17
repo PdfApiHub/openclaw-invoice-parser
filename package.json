@@ -1,0 +1,38 @@
+{
+  "name": "invoice-parser",
+  "version": "1.0.0",
+  "description": "Parse, extract, and convert invoice PDFs. Extract text, tables, and line items from invoices. OCR scanned invoices. Export to Excel, CSV, and DOCX. Powered by PDFAPIHub.",
+  "type": "module",
+  "main": "index.ts",
+  "keywords": [
+    "openclaw",
+    "invoice-parser",
+    "pdf-parser",
+    "invoice-ocr",
+    "table-extraction",
+    "pdf-to-excel",
+    "pdf-to-csv",
+    "pdfapihub",
+    "clawhub",
+    "ai-agent"
+  ],
+  "author": "PDFAPIHub <hello@pdfapihub.com>",
+  "license": "MIT",
+  "homepage": "https://pdfapihub.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PdfApiHub/openclaw-invoice-parser"
+  },
+  "openclaw": {
+    "extensions": ["./index.ts"],
+    "skills": ["./skills"],
+    "compat": {
+      "pluginApi": ">=2026.3.24-beta.2",
+      "minGatewayVersion": "2026.3.24-beta.2"
+    },
+    "build": {
+      "openclawVersion": "2026.3.24-beta.2",
+      "pluginSdkVersion": "2026.3.24-beta.2"
+    }
+  }
+}
