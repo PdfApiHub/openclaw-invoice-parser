@@ -35,8 +35,8 @@ async function callApi(
   }
   return {
     success: true,
-    message: "Binary file returned",
     content_type: contentType,
+    message: "Binary file returned. Use output='url' or output='base64' for usable results.",
   };
 }
 
